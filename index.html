@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Empresa Fulana</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	<meta charset="utf-8"/>
+	<meta type="description" content="Projeto destinado para a segunda etapa do Processo Seletivo.">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="http://www.w3.org/2000/svg">
+	<style type="text/css">
+  .jumbotron {
+     background-image: url(img/capa.jpg);
+	 background-size: cover;
+    color: #F7D358;
+  }
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		 <script>
+		(function() {
+		  'use strict';
+		  window.addEventListener('load', function() {
+		    var forms = document.getElementsByClassName('needs-validation');
+		    var validation = Array.prototype.filter.call(forms, function(form) {
+		      form.addEventListener('submit', function(event) {
+		        if (form.checkValidity() === false) {
+		          event.preventDefault();
+		          event.stopPropagation();
+		        }
+		        form.classList.add('was-validated');
+		      }, false);
+		    });
+		  }, false);
+		})();
+	</script>
+</head>
+<body>	
+		<div class="jumbotron text-center">
+			<h1>Tecnológica Smart</h1> 			
+			<font color="white"><p>Uma empresa feita para você</p> </font>
+        </div>
+	 <div class="container">
+	 	<div class=" row">
+			<section class="col-sm-7 row">
+				<article class="col-sm-12">
+					<h4>Quem somos?</h4>
+					<p class="p1">
+						Somos uma empresa especializada em desenvolvimento aplicativos e web, nosso objetivo é oferecer uma solução
+						completa para grandes empresas e empreendedores digitais Trabalhamos para ser o seu parceiro tecnológico em 
+						todos os aspectos do seu projeto, <font color="#2E64FE">transformando a sua ideia em um projeto digital de sucesso</font>, sem complicações
+						e com um processo simples e transparente.
+					</p>
+				</article>
+				<article class="col-sm-12 ">
+					<h4 >Como trabalhamos</h4>
+					<p class="p2 row">
+						<span class="col-sm-6">
+							Possuímos uma equipe totalmente capacidados nas  áreas de desenvolvimento de software, junto com os 
+							setores de Design, Gerente de Projetos e demias membros da equipe. Estes porofissionais  irão analisar o seu negócio e decidirem qual a 
+							melhor forma de desenvolver uma boa aplicação para a sua empresa, sempre visando agradar e compreender o que
+							cada cliente necessita. <a href="https://comparador.tecmundo.com.br/samsung-galaxy-s10">Caso queira saber mais basta clicar aqui.</a>
+						</span>
+						<span class="col-sm-auto">
+							<img src="img/info.jpg" title="aplicativos" id="info">
+						</span>
+					</p>
+				</article>	
+			</section>
+			<br><br>
+			<aside class="col-sm-5 row justify-content-center">
+				<article class="col-sm-12">
+					<img src="img/smart.png" title="smartphone" class="img-fluid" id="smartphone">
+				</article>
+				<article class="col-sm-12">
+				<h3>Assine nossas notícias </h3>
+				<h6>Preencha o fomulario abaixo e receba nossas novidades</h6>
+					<form name="fcadastro" action="/action_page.php" class="needs-validation" novalidate>
+					    <div class="form-group">
+					      <label for="uname">Nome Completo:</label>
+					      <input type="text" class="form-control" id="uname" placeholder="Nome Sobrenome" name="uname" required>
+					      <div class="valid-feedback">Nome válido :D</div>
+					      <div class="invalid-feedback">Por favor, preencha somente com letras!</div>
+					    </div>
+					    <div class="form-group">
+					      <label for="uname">E-mail:</label>
+					      <input type="email" class="form-control" id="uname" 
+					      pattern= "[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="nome@provedor.com" name="uname" required>
+					      <div class="valid-feedback">Email válido</div>
+					      <div class="invalid-feedback">Por favor, preencha no formato "nome@provedor.com.br"!</div>
+					    </div>
+					    <div class="form-group form-check">
+					      <label class="form-check-label">
+					        <input class="form-check-input" type="checkbox" name="remember" required> Estou de acordo
+					        com os termos de receber os feeds.
+					        <div class="valid-feedback">Você aceitou</div>
+					        <div class="invalid-feedback">Você precisa aceitar os nossos termos</div>
+					      </label>
+					    </div>
+					    <button type="submit" class="btn btn-warning">Enviar Dados</button>
+					</form>
+				</article>
+				
+			</aside>
+			<footer class="col-sm-12"></footer>
+		</div>
+	 </div>
+</body>
+</html>
